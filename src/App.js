@@ -1,32 +1,30 @@
 import React, { Component } from 'react';
-import './static/bulma/bulma.css';
-import styled from 'styled-components'
+import './static/bootstrap-4/css/bootstrap.css';
 import { compose, withState, withHandlers, lifecycle } from 'recompose'
-import BG from './static/img/cover.jpg'
 
-// styled component
-const IndexBG = styled.div`
-  background-image: url(${BG});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
-  width: 100%;
-`;
+//  import css
+import {
+  IndexBG,
+  HeaderName
+} from './styles/global.js'
+
 
 const AppPage = props => (
   <div className="App">
-    <div className="row"> 
-      <div className="cover">
-        <IndexBG>
-          
-        </IndexBG>
+    <IndexBG>
+      <div className="container">
+        <div className="row"> 
+          <HeaderName className="col-12">
+            <h1>PORTFOLIO</h1>
+            <h5>TULATHORN SRIPONGPANKUL</h5>
+          </HeaderName>
+        </div>
       </div>
-    </div>
+    </IndexBG>
+
   </div>
 
 )
-
 
 const AppComposer = compose(
 
