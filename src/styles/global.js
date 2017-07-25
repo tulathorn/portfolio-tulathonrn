@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import BG from '../static/img/cover.jpg'
+import Profile from '../static/img/profile.jpg'
 import WebFont from 'webfontloader'
 
 WebFont.load({
@@ -17,6 +18,16 @@ const IndexBG = styled.div`
   width: 100%;
 `;
 
+const ProfileBG = styled.div`
+  background-image: url(${Profile});
+  background-size: cover;
+  background-repeat: no-repeat;
+  // background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  color: white;
+`;
+
 const HeaderName = styled.div`
     color: white;
     margin-top: 60vh;
@@ -29,5 +40,6 @@ const HeaderName = styled.div`
 
 export {
     IndexBG,
+    ProfileBG,
     HeaderName
 }
