@@ -28,32 +28,23 @@ const AppPage = props => (
         <div className="col-md-6">
           <div className="container">
             <h1>PERSONAL INFORMATION</h1>
-            <ul className="list-unstyled">
-              <li>NAME</li>
-                <ul>
-                  <p>Tulathorn Sripongpankul</p>
-                </ul>
-              <li>ADDRESS</li>
-                <ul>
-                  <p>229/131 Moo1 Rangsit-Nakhonayok rd.
-                    <br /> Lumpukkud, Thanyaburi
-                    <br /> Pathumtani 12110
-                  </p> 
-                </ul>
-              <li>Integer molestie lorem at massa</li>
-              <li>Facilisis in pretium nisl aliquet</li>
-              <li>Nulla volutpat aliquam velit
-                <ul>
-                  <li>Phasellus iaculis neque</li>
-                  <li>Purus sodales ultricies</li>
-                  <li>Vestibulum laoreet porttitor sem</li>
-                  <li>Ac tristique libero volutpat at</li>
-                </ul>
-              </li>
-              <li>Faucibus porta lacus fringilla vel</li>
-              <li>Aenean sit amet erat nunc</li>
-              <li>Eget porttitor lorem</li>
-            </ul>
+            <dl className="row">
+              <dt className="col-sm-3">NAME:</dt>
+              <dd className="col-sm-9">Tulathorn Sripongpankul</dd>
+
+              <dt className="col-sm-3">ADDRESS:</dt>
+              <dd className="col-sm-9">
+                229/131 Moo1, Rangsit-Nakhonayok rd. Lumpukkud, Thanyaburi
+                Pathumtani 12110
+              </dd>
+
+              <dt className="col-sm-3">E-MAIL:</dt>
+              <dd className="col-sm-9">tul.tulathorn@gmail.com</dd>
+
+              <dt className="col-sm-3">TEL:</dt>
+              <dd className="col-sm-9">(+66) 86-529-4915</dd>
+            
+            </dl>
           </div>
         </div>
       </div>
