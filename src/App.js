@@ -34,7 +34,7 @@ const FlexDetialColumn = styled.div`
   flex: 1;
   height: 100vh;
   width: 100%;
-  text-align: center;
+  // text-align: center;
   
   @media only screen and (max-width: 630px){
     color: white;
@@ -58,7 +58,24 @@ const AppPage = props => (
     <FlexContainer>
       <FlexPhotoColumn />
       <FlexDetialColumn>
-        <h1>PERSONAL INFORMATION</h1>
+        
+        <dl className="row">
+          <dt className="col-sm-3">NAME:</dt>
+          <dd className="col-sm-9">Tulathorn Sripongpankul</dd>
+
+          <dt className="col-sm-3">ADDRESS:</dt>
+          <dd className="col-sm-9">
+            229/131 Moo1, Rangsit-Nakhonayok rd. Lumpukkud, Thanyaburi
+            Pathumtani 12110
+          </dd>
+
+          <dt className="col-sm-3">E-MAIL:</dt>
+          <dd className="col-sm-9">tul.tulathorn@gmail.com</dd>
+
+          <dt className="col-sm-3">TEL:</dt>
+          <dd className="col-sm-9">(+66) 86-529-4915</dd>
+        
+        </dl>
       </FlexDetialColumn>
     </FlexContainer>
     {/* <div className="container">
