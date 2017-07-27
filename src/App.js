@@ -9,6 +9,39 @@ import {
   HeaderName
 } from './styles/global.js'
 
+import styled from 'styled-components'
+import Profile from './static/img/profile.jpg'
+
+const FlexContainer = styled.div`
+  display: flex;
+`
+
+const FlexPhotoColumn = styled.div`
+  display: flex;
+  flex: 1;
+  background-image: url(${Profile});
+  background-size: cover;
+  background-repeat: no-repeat;
+  // background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  color: white;
+
+`
+
+const FlexDetialColumn = styled.div`
+  display: flex;
+  flex: 1;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  
+  @media only screen and (max-width: 630px){
+    color: white;
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+  }
+`
 
 const AppPage = props => (
   <div className="App">
@@ -22,7 +55,13 @@ const AppPage = props => (
         </div>
       </div>
     </IndexBG>
-    <div className="container">
+    <FlexContainer>
+      <FlexPhotoColumn />
+      <FlexDetialColumn>
+        <h1>PERSONAL INFORMATION</h1>
+      </FlexDetialColumn>
+    </FlexContainer>
+    {/* <div className="container">
       <div className="row ">
         <ProfileBG className="col-12 col-md-6" />
         <div className="col-md-6">
@@ -48,7 +87,7 @@ const AppPage = props => (
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
 
   </div>
 
