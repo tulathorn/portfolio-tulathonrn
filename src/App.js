@@ -60,6 +60,7 @@ const AppPage = props => (
       <FlexDetialColumn>
         
         <dl className="row">
+          <h1>PERSONAL INFORMATION</h1>
           <dt className="col-sm-3">NAME:</dt>
           <dd className="col-sm-9">Tulathorn Sripongpankul</dd>
 
