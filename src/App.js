@@ -32,8 +32,11 @@ const FlexPhotoColumn = styled.div`
 const FlexDetialColumn = styled.div`
   display: flex;
   flex: 1;
+  -webkit-flex-direction: column;
   height: 100vh;
   width: 100%;
+  // margin-top: 5vh;
+  // margin-left: 3vw;
   // text-align: center;
   
   @media only screen and (max-width: 630px){
@@ -58,9 +61,19 @@ const AppPage = props => (
     <FlexContainer>
       <FlexPhotoColumn />
       <FlexDetialColumn>
-        
-        <dl className="row">
-          {/* <h1>PERSONAL INFORMATION</h1> */}
+        <h1
+          style={{
+            marginTop: '5vh',
+            marginLeft: '1vw'
+          }}
+        >PERSONAL INFORMATION</h1>
+        <dl
+          className="row"
+          style={{
+            marginTop: '5vh',
+            marginLeft: '1vw'
+          }}
+        >
           <dt className="col-sm-3">NAME:</dt>
           <dd className="col-sm-9">Tulathorn Sripongpankul</dd>
 
