@@ -88,38 +88,36 @@ const AppPage = props => (
 
           <dt className="col-sm-3">TEL:</dt>
           <dd className="col-sm-9">(+66) 86-529-4915</dd>
-        
         </dl>
+        <h1
+          style={{
+            marginTop: '5vh',
+            marginLeft: '1vw'
+          }}
+        >Education Background</h1> 
+        <div 
+          style={{
+            marginTop: '5vh',
+            marginLeft: '1vw'
+        }}>
+          <h4>2015-Present</h4>
+          <p>
+            Bachelor of Engineering, Computer Enigieering(International Program) 
+            <br/>King Mongkut's University of Technology Thonburi, Thailand
+          </p>
+          <h4>Spring semester 2016</h4>
+          <p>
+            Semester Exchange, Information Technology
+            <br/>JAMK University of Applied Sciences, Finland
+          </p>
+          <h4>Summer semester 2015</h4>
+          <p>
+            Summer school, Operation system course
+            <br/>ECE Paris, France 
+          </p>
+        </div>
       </FlexDetialColumn>
     </FlexContainer>
-    {/* <div className="container">
-      <div className="row ">
-        <ProfileBG className="col-12 col-md-6" />
-        <div className="col-md-6">
-          <div className="container">
-            <h1>PERSONAL INFORMATION</h1>
-            <dl className="row">
-              <dt className="col-sm-3">NAME:</dt>
-              <dd className="col-sm-9">Tulathorn Sripongpankul</dd>
-
-              <dt className="col-sm-3">ADDRESS:</dt>
-              <dd className="col-sm-9">
-                229/131 Moo1, Rangsit-Nakhonayok rd. Lumpukkud, Thanyaburi
-                Pathumtani 12110
-              </dd>
-
-              <dt className="col-sm-3">E-MAIL:</dt>
-              <dd className="col-sm-9">tul.tulathorn@gmail.com</dd>
-
-              <dt className="col-sm-3">TEL:</dt>
-              <dd className="col-sm-9">(+66) 86-529-4915</dd>
-            
-            </dl>
-          </div>
-        </div>
-      </div>
-    </div> */}
-
   </div>
 
 )
