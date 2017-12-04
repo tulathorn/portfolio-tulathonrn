@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './static/bootstrap-4/css/bootstrap.css';
 import { compose, withState, withHandlers, lifecycle } from 'recompose'
 
+import { injectGlobal } from 'styled-components'
+
 //  import css
 import {
   IndexBG,
@@ -11,6 +13,12 @@ import {
 
 import styled from 'styled-components'
 import Profile from './static/img/profile.jpg'
+
+injectGlobal([`
+  * {
+    font-family: Lato;
+  }
+`])
 
 const FlexContainer = styled.div`
   display: flex;
