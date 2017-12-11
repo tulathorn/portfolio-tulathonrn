@@ -3,12 +3,6 @@ import BG from '../static/img/cover.jpg'
 
 import WebFont from 'webfontloader'
 
-WebFont.load({
-  google: {
-    families: ['Oswald:500', 'Oxygen:300']
-  }
-});
-
 const IndexBG = styled.div`
   background-image: url(${BG});
   background-size: cover;
@@ -30,6 +24,7 @@ const IndexBG = styled.div`
 
 const HeaderName = styled.div`
     color: white;
+    background-color: transparent;
     margin-top: 60vh;
     margin-left: 5vw;
     @media only screen and (max-width: 630px){
